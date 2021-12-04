@@ -18,6 +18,7 @@ pub fn run_part1(path: &str) -> i32 {
         .collect_vec();
     solve1(&data)
 }
+
 fn solve1(input: &[i32]) -> i32 {
     let mut c = 0;
 
