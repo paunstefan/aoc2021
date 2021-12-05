@@ -4,6 +4,7 @@ mod aoc1;
 mod aoc2;
 mod aoc3;
 mod aoc4;
+mod aoc5;
 
 macro_rules! run_day {
     ( $x:ident, $input:expr ) => {{
@@ -38,6 +39,7 @@ fn main() {
         2 => run_day!(aoc2, "data/2"),
         3 => run_day!(aoc3, "data/3"),
         4 => run_day!(aoc4, "data/4"),
+        5 => run_day!(aoc5, "data/5"),
         _ => eprintln!("Day not valid"),
     }
 }
