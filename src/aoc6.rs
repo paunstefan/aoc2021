@@ -32,15 +32,10 @@ fn solve_days(input: Vec<u8>, days: usize) -> u64 {
     }
 
     for _ in 0..days {
-        let mut new_ones = 0;
+        let new_ones = gen[0];
 
-        for i in 0..9 {
-            if i == 0 {
-                new_ones = gen[i];
-            } else {
-                gen[i - 1] = gen[i];
-            }
-            gen[i] = 0;
+        for i in 1..9 {
+            gen[i - 1] = gen[i];
         }
         gen[6] += new_ones;
         gen[8] = new_ones;
