@@ -1,4 +1,5 @@
 use clap::{App, Arg};
+use std::time::Instant;
 
 mod aoc1;
 mod aoc2;
@@ -10,8 +11,15 @@ mod aoc6;
 macro_rules! run_day {
     ( $x:ident, $input:expr ) => {{
         println!("\n{}:", stringify!($x));
-        println!("Part 1: {}", $x::run_part1($input));
-        println!("Part 2: {}", $x::run_part2($input));
+        let start = Instant::now();
+        let p1 = $x::run_part1($input);
+        let duration = start.elapsed();
+        println!("Part 1: {} ({:?})", p1, duration);
+
+        let start = Instant::now();
+        let p1 = $x::run_part2($input);
+        let duration = start.elapsed();
+        println!("Part 2: {} ({:?})", p1, duration);
     }};
 }
 
