@@ -1,4 +1,4 @@
-#![allow(dead_code)]
+#![allow(dead_code, non_snake_case)]
 use std::collections::HashSet;
 
 use itertools::Itertools;
@@ -109,7 +109,6 @@ fn solve2(input: Vec<(Vec<Digit>, Vec<Digit>)>) -> i64 {
             let n = digits.iter().position(|x| *x == c).unwrap();
             output_nr += &n.to_string();
         }
-        println!("{}", output_nr);
         result += output_nr.parse::<i64>().unwrap();
     }
     result
