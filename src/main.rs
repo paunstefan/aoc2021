@@ -29,7 +29,7 @@ macro_rules! aoc_days{
     };
 }
 
-aoc_days!(aoc1, aoc2, aoc3, aoc4, aoc5, aoc6, aoc7, aoc8, aoc9,);
+aoc_days!(aoc1, aoc2, aoc3, aoc4, aoc5, aoc6, aoc7, aoc8, aoc9, aoc10,);
 
 fn main() {
     let matches = App::new("Advent of Code 2021")
