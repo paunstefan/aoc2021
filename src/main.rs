@@ -30,7 +30,8 @@ macro_rules! aoc_days{
 }
 
 aoc_days!(
-    aoc1, aoc2, aoc3, aoc4, aoc5, aoc6, aoc7, aoc8, aoc9, aoc10, aoc11, aoc12, aoc13, aoc14, aoc15
+    aoc1, aoc2, aoc3, aoc4, aoc5, aoc6, aoc7, aoc8, aoc9, aoc10, aoc11, aoc12, aoc13, aoc14, aoc15,
+    aoc16, aoc17,
 );
 
 fn main() {
